@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  color: #14213d;
+  background: #f4f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.font-display {
+  font-family: "Space Grotesk", "DM Sans", sans-serif;
+}
+.dark body,
+.dark {
+  color: #e8eefc;
+  background: #101827;
+}
+.dark .page-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+.page-grid {
+  background-image:
+    linear-gradient(rgba(20, 33, 61, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 33, 61, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.card {
+  border: 1px solid rgb(226 232 240 / 80%);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 90%);
+  box-shadow: 0 16px 45px rgb(20 33 61 / 8%);
+  backdrop-filter: blur(12px);
+}
+.dark .card {
+  border-color: rgb(51 65 85 / 70%);
+  background: rgb(15 23 42 / 90%);
+}
+.input-shell {
+  border: 1px solid rgb(226 232 240);
+  border-radius: 1rem;
+  background: rgb(248 250 252);
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+.input-shell:focus-within {
+  border-color: #315efb;
+  box-shadow: 0 0 0 4px rgb(59 130 246 / 10%);
+}
+.dark .input-shell {
+  border-color: rgb(51 65 85);
+  background: rgb(30 41 59);
+}
+.scrollbar-thin::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+}
